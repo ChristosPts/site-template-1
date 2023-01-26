@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+            crossorigin="anonymous">
+    </script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="/css/loader.css" rel="stylesheet">
+    <link href="/css/nav-footer.css" rel="stylesheet">
+
+    <title>Service A2</title>
+</head>
+<body>
+    
+    <div class="loader-wrapper">
+        <div class="  ">   
+            <i class="bi bi-diamond-half"></i>
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <section id="nav-container">
+        <nav class="navbar navbar navbar-expand-lg px-3 py-4  bg-transaprent position-absolute" style ="width:100%;">
+            <div class="container-fluid mx-3">
+            <a class="navbar-brand" href="index.html"><h1><i class="bi bi-diamond-half"></i> Logo</h1></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar" 
+                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+            </button>
+            
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="navbar" aria-labelledby="navbar">
+                <div class="offcanvas-header">
+                    <h1 class="offcanvas-title" id="offcanvasNavbarLabel"> <i class="bi bi-diamond-half"></i> Logo </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link transitionLink" aria-current="page" href="/gr/index.html">Αρχική</a>
+                        </li>
+        
+                            <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Υπηρεσίες <i class="bi bi-caret-down-fill"></i>
+                              </a>
+         
+                              <div class="dropdown-menu navDropDown bigNav" aria-labelledby="navbarDropdown">                      
+                              <ul class="list-unstyled">
+                              <li><a class="dropdown-item transitionLink" data-toggle="tooltip"  title="" href="#">Υπηρεσίες A</a></li>
+                              <li><a class="dropdown-item transitionLink" href="#">Υπηρεσία A1</a></li>
+                              <li><a class="dropdown-item transitionLink" href="#">Υπηρεσία A2</a></li>
+                              <li><a class="dropdown-item transitionLink" href="#">Υπηρεσία A3</a></li>
+                              <li><a class="dropdown-item transitionLink" href="#">Υπηρεσία A4</a></li>
+                            </ul>
+                            <ul class="list-unstyled">
+                              <li><a class="dropdown-item transitionLink" data-toggle="tooltip"  title="" href="#">Υπηρεσίες B</a></li>
+                              <li><a class="dropdown-item transitionLink" href="#">Υπηρεσία B1</a></li>
+                              <li><a class="dropdown-item transitionLink" href="#">Υπηρεσία B2</a></li>
+                              <li><a class="dropdown-item transitionLink" href="#">Υπηρεσία B3</a></li>
+                              <li><a class="dropdown-item transitionLink" href="#">Υπηρεσία B4</a></li>
+                            </ul>
+                                <ul class="list-unstyled">
+                                  <li><a class="dropdown-item transitionLink" data-toggle="tooltip"  title="" href="#">Υπηρεσίες C</a></li>
+                                  <li><a class="dropdown-item transitionLink" href="#">Υπηρεσία C1</a></li>
+                                  <li><a class="dropdown-item transitionLink" href="#">Υπηρεσία C2</a></li>
+                                  <li><a class="dropdown-item transitionLink" href="#">Υπηρεσία C3</a></li>
+                                  <li><a class="dropdown-item transitionLink" href="#">Υπηρεσία C4</a></li>
+                                </ul>
+                              </div>
+                            </li>
+                           
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Σχετικά με εμάς <i class="bi bi-caret-down-fill"></i>
+                                </a>
+                                <ul class="dropdown-menu navDropDown2">
+                                    <li><a class="dropdown-item transitionLink" href="#">Σχετικά με την Εταιρεία</a></li>
+                                    <li><a class="dropdown-item transitionLink" href="#">Κριτικές</a></li>
+                                    <li><a class="dropdown-item transitionLink" href="#">Συχνές Ερωτήσεις</a></li>                        
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link transitionLink" aria-current="page" href="#">Νέα</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link transitionLink" aria-current="page" href="/gr/contact.html">Επικοινωνία</a>
+                            </li>
+                    </ul>
+        
+                    <ul class="navbar-nav justify-content-end my-auto languages">
+                        <li class="nav-item  mx-1">
+                            <a href="/index.html"><button class = "mx-2 bg-transparent"><img src = /imgs/UK.jpg></button> </a>
+                             <button class = "bg-transparent"><img src = /imgs/GR.jpg></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          
+          </div>
+         </nav>
+    </section>
+    
+        <div class="banner d-flex align-items-center"> 
+            <div class="container">
+                <div class="row"> 
+                    <div class="col-md-7"></div>
+                    <div class="text-white px-5 col-md-5">
+                        <h1 class="">ΌΝΟΜΑ ΕΤΑΙΡΕΙΑΣ</h1>
+                        <p class="" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptatum? Tempora minima iure, tenetur dolores quod impedit enim quae. Nam!</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <section class="about">
+            <div class="bg-white about-container container-flex p-5">
+                <div class="row p-5 about-main d-flex align-items-center ">
+                    <div class="col-xl-7 pb-3 pt-2">
+                        <h1>Σχετικά με την Εταιρεία</h1>
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dicta nesciunt dolorem sequi reiciendis voluptatum totam qui in?</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestiae, suscipit debitis quos expedita laudantium qui nemo error iste tempora nostrum numquam unde fuga quia! Saepe quisquam ipsa atque doloribus in repellat ex quos velit, nobis earum sed ut reiciendis dicta libero ipsam accusamus incidunt dolore minus. Incidunt accusantium harum adipisci modi, blanditiis ratione delectus magni velit numquam aut ut veritatis tempore possimus ipsa eius fuga, laudantium necessitatibus? Eius iure tempora ab, maxime quibusdam nesciunt dolorum illum explicabo dolorem? Dicta, laborum facilis, dolorem vitae quaerat possimus consectetur nostrum optio molestias quidem quo reiciendis, reprehenderit quod nesciunt iure accusantium asperiores ex!</p>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <a href="#pricing" class="text-decoration-none"><button>ΣΥΜΒΟΛΑΙΑ</button></a>
+                    </div>
+                        
+
+                    </div>
+                    <div class="col-xl-5 py-3">
+                        <img src="/imgs/laptop.png" >
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+        <section class="more-about">
+            <div class="bg-light py-5">
+                <div class="container py-5">
+                    <div class="row g-4 d-flex align-items-center text-center">
+                        <div class="col-lg-4 ">
+                            <div class="p-4 ">
+                                <i class="bi bi-clock-history"></i>
+                                <h2 class="fw-bold">Ώρα για την επιτυχία</h2>
+                                <hr>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta officia mollitia ad ex deleniti, odio eos similique excepturi quaerat error omnis tempore voluptatibus dolor corrupti animi accusantium quae. Omnis, nam.</p>
+                                <a href="#" class="link-hover-effect">Μάθε Περισσότερα</a>
+                            </div>    
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="p-4 ">
+                                <i class="bi bi-graph-up-arrow"></i>
+                                <h2 class="fw-bold">Κεφάλαια & Συναλλαγές</h2>
+                                <hr>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta officia mollitia ad ex deleniti, odio eos similique excepturi quaerat error omnis tempore voluptatibus dolor corrupti animi accusantium quae. Omnis, nam.</p>
+                                
+                                <a href="#" class="link-hover-effect">Μάθε Περισσότερα</a>
+                            </div>  
+                        </div>
+                        <div class="col-lg-4 ">
+                            <div class="p-4  ">
+                                <i class="bi bi-headset"></i>
+                                <h2 class="fw-bold">Υποστήριξη Πελατών</h2>
+                                <hr>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta officia mollitia ad ex deleniti, odio eos similique excepturi quaerat error omnis tempore voluptatibus dolor corrupti animi accusantium quae. Omnis, nam.</p>
+                                <a href="#" class="link-hover-effect">Μάθε Περισσότερα</a>
+                            </div>  
+                        </div>
+                    </div>    
+                </div>
+                </div>   
+        </section>
+          
+        <section class="about-trading">
+            <div class="bg-white py-5">
+                <div class="container py-5">
+                  
+                    <div class="row p-3">
+                        <h1 class="fw-bold"><span style="color: #6240dd;">Συναλλαγή</span><span> Μετοχών</span></h1>
+    
+                        <div class="col-lg-7  py-3">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At tempore, laborum id fugiat mollitia corporis vel consectetur itaque, non quae debitis quia ab quaerat esse, deleniti accusamus dignissimos aperiam animi fuga ratione perferendis quis dolores. Cum ratione nam delectus distinctio aliquid magnam quo incidunt exercitationem quam vero nostrum, minima voluptatem optio officiis rem illum quisquam fugit repudiandae totam reprehenderit itaque ab iusto accusantium labore? Repudiandae quidem aliquam necessitatibus nesciunt cum voluptatibus quasi ea doloremque vero. Architecto recusandae illo doloribus similique voluptas ab rerum repellendus omnis aspernatur nobis eligendi neque eos blanditiis reprehenderit voluptatum saepe consequatur, exercitationem minus necessitatibus odio alias.</p>
+                            <a href="#" class="float-end pe-3 text-decoration-none" style="color: #6240dd;">Μάθε Περισσότερα</a>
+                        </div>
+                        <div class="col-lg-5">
+                            <img src="/imgs/undraw_investor_update_re_qnuu.svg" style="max-width: 100%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+      
+         
+        <section class="investment-sectors">
+            <div class="bg-light py-5">
+                <div class="container sectors py-5">
+                    <div class="row px-3 ">
+                        <div class="col-lg-6 sector-img py-3"> 
+                            <img src="/imgs/invest2.jpg" alt="">
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <h1 class="fw-bold ps-3 px-5"><span style="color: #5734d7;">Επενδύστε</span> σε 8 διαφορετικούς τομείς</h1>
+                            <div class="row ">
+                                <div class="sector-cards col-4 p-3">
+                                    <i class="bi bi-plugin"></i>
+                                    <h6>Ενέργεια</h6>
+                                </div>
+                                <div class="sector-cards col-4 p-3">
+                                    <i class="bi bi-graph-up"></i>
+                                    <h6>Χρηματοδότηση</h6>
+                                </div>
+                                <div class="sector-cards col-4 p-3">
+                                    <i class="bi bi-heart-pulse"></i>
+                                    <h6>Υγειονομια</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="sector-cards col-4 p-3">
+                                    <i class="bi bi-buildings"></i>
+                                    <h6>Ακίνητα</h6>
+                                </div>
+                                <div class="sector-cards col-4 p-3">
+                                    <i class="bi bi-droplet-half"></i>
+                                    <h6>Υπηρεσίες</h6>
+                                </div>
+                                <div class="sector-cards col-4 p-3">
+                                    
+                                    <i class="bi bi-phone-vibrate"></i>
+                                    <h6>Τηλεπικοινωνίες</h6>
+                                </div>
+                             </div>
+                             <div class="row">  
+                                <div class="sector-cards col-6 p-3">
+                                    <i class="bi bi-motherboard"></i>
+                                    <h6>Πληροφορική</h6>
+                                </div>
+                                <div class="sector-cards col-6 p-3">
+                                    <i class="bi bi-cart4"></i>
+                                    <h6>Καταναλωτικά Αγαθά</h6>
+                                </div>
+                            </div>
+                            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus neque iure autem quibusdam nisi, hic corrupti ea quis voluptatem expedita, possimus nemo aspernatur! Debitis, porro consectetur? Eius iste ratione nostrum sit quisquam, ipsa expedita animi adipisci dolorem deserunt tenetur porro laboriosam, delectus hic nisi minus iusto reprehenderit vel harum natus repellat, alias odit quos! Reprehenderit, necessitatibus.</p>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+        <section class="deposits-withdrawls">
+            <div class="bg-white py-5 ">
+                <div class="container py-5">
+                    <h1 class="text-center">Καταθέσεις & Αναλήψεις</h1>
+                    <p class="text-center" style="max-width: 700px; margin: 0 auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus velit, earum atque temporibus totam fugit architecto consectetur laborum explicabo vel repellendus, consequuntur quod nam ipsa. Explicabo, enim.</p>
+                    
+                    <div class="row ">
+    
+                        <div class="col-lg-6 p-5 ">
+                            <div class="row payment-currencies text-center ">
+                                <h2>Μέθοδοι Πληρωμής</h2>    
+                                    <div class="col-sm-6 mt-2">
+                                        <div class="row">
+                                            <div class="col-6 i-cover">
+                                                <i class="bi bi-credit-card-2-front"></i>
+                                                <h6>Πιστωτική</h6>
+                                            </div>
+                                            <div class="col-6 i-cover">
+                                                <i class="bi bi-currency-bitcoin"></i>
+                                                <h6>Bitcoin</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 mt-2">
+                                        <div class="row">
+                                            <div class="col-6 i-cover">
+                                                <i class="bi bi-paypal"></i>
+                                                <h6>PayPal</h6>
+                                            </div>
+                                            <div class="col-6 i-cover">
+                                                <i class="bi bi-alipay"></i>
+                                                <h6>AliPay</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                           
+                            </div>
+                            <div class="row payment-currencies text-center mt-4">
+                                <div class="pc-header">
+                                    <h2>ΝΟΜΙΣΜΑΤΑ</h2>
+                                </div>
+                                
+                                <div class="col-sm-6 mt-2">
+                                    <div class="row">
+                                        <div class="col-6 i-cover">
+                                            <i class="bi bi-currency-dollar"></i>
+                                            <h6>Δολάριο</h6>
+                                        </div>
+                                        <div class="col-6 i-cover">
+                                            <i class="bi bi-currency-euro"></i>
+                                            <h6>Ευρώ</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mt-2">
+                                    <div class="row">
+                                        <div class="col-6 i-cover">
+                                            <i class="bi bi-currency-pound"></i>
+                                            <h6>Λίρα</h6>
+                                        </div>
+                                        <div class="col-6 i-cover">
+                                            <i class="bi bi-currency-yen"></i>
+                                            <h6>Γεν</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+    
+                        <div class="col-lg-6 py-5">
+                            <div class="card mb-3 py-2 " style="max-width: 540px; margin: 0 auto;">
+                                <div class="row g-0 ">
+                                  <div class="col-3 d-flex justify-content-center align-items-center">
+                                    <i class="bi bi-cash-stack" style="font-size:60px;"></i>
+                                </div>
+                                  <div class="col-9">
+                                    <div class="card-body">
+                                      <h4 class="card-title">ΧΩΡΙΣ ΟΡΙΑ</h4>
+                                      <p class="card-text">No limits on withrdrawls and deposits</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card mb-3 py-2" style="max-width: 540px;  margin: 0 auto;">
+                                <div class="row g-0">
+                                  <div class="col-3 d-flex justify-content-center align-items-center">
+                                    <i class="bi bi-clock-fill" style="font-size:60px;"></i>
+                                  </div>
+                                  <div class="col-9">
+                                    <div class="card-body ">
+                                      <h4 class="card-title">ΤΑΧΥΤΗΤΑ</h4>
+                                      <p class="card-text">Instantaneous Deposits & Withrdrawls</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card mb-3 py-2" style="max-width: 540px;  margin: 0 auto;">
+                                <div class="row g-0 ">
+                                  <div class="col-3 d-flex justify-content-center align-items-center">
+                                    <i class="bi bi-headset" style="font-size:60px;"></i>
+                                  </div>
+                                  <div class="col-9">
+                                    <div class="card-body ">
+                                      <h4 class="card-title">ΥΠΟΣΤΗΡΙΞΗ</h4>
+                                      <p class="card-text">24/7 technical support (Email/Phone)</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                        <div class="mt-1">
+                            <a href="#" class="text-center" style="color: #6240dd;">
+                        <h5>ΔΕΙΤΕ ΟΛΟΥΣ ΤΟΥΣ ΤΡΟΠΟΥΣ ΚΑΙ ΤΑ ΝΟΜΙΣΜΑΤΑ ΠΛΗΡΩΜΗΣ</h5></a> 
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="pricing" id="pricing">
+            <div class="bg-light py-5 pricing-banner">
+                <div class="container pt-5 pb-4">
+                    <div class="row">
+                        <h1 style="color: white; font-size: 48px;" class="text-center mb-4 fw-bold">ΠΡΟΓΡΑΜΜΑΤΑ ΣΥΜΒΟΛΑΙΟΥ</h1>
+    
+                        <div class="col-md-4 d-flex text-center align-items-center justify-content-center pb-5 pt-3">
+                            <div class="card card1 " style="width: 18rem;  box-shadow: none;">
+                                <div class=" pricing-header">
+                                    <h1 class="fw-bold">$100.00</h1>
+                                    <h4>μηνιαία χρέωση</h4>
+                                </div>
+                                <div class="card-body ">
+                                  <h5 class="card-title fw-bold" style="color: #ff3af8 ;">Οικονομικό</h5>
+                                  <ul class="list-unstyled">
+                                    <li>An item</li>
+                                    <li>A second item</li>
+                                    <li>A third item</li>
+                                    <li>A fourth item</li>
+                                    <li>A fifth item</li>
+                                  </ul>
+                                  <div class="pb-3 pt-1">
+                                    <a href="#" class="btn btn-primary" onmouseover = "SA2card1H()" onmouseout = "SA2card1U()">Εγγραφείτε</a>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-md-4 d-flex text-center align-items-center justify-content-center pb-5 pt-3">
+                            <div class="card card2" style="width: 18rem;  box-shadow: none;">
+                                <div class=" pricing-header">
+                                    <h1 class="fw-bold">$300.00</h1>
+                                    <h4>μηνιαία χρέωση</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold" style="color: #5734d7 ;">Επιχειρηματίας</h5>
+                                    <ul class="list-unstyled">
+                                    <li>An item</li>
+                                    <li>A second item</li>
+                                    <li>A third item</li>
+                                    <li>A fourth item</li>
+                                    <li>A fifth item</li>
+                                    </ul>
+                                    <div class="pb-3 pt-1">
+                                    <a href="#" class="btn btn-primary" onmouseover = "SA2card2H()" onmouseout = "SA2card2U()">Εγγραφείτε</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex text-center align-items-center justify-content-center pb-5 pt-3">
+                            <div class="card card3" style="width: 18rem;  box-shadow: none;">
+                                <div class=" pricing-header">
+                                    <h1 class="fw-bold">$500.00</h1>
+                                    <h4>μηνιαία χρέωση</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold" style="color: #3472d7 ;">Επαγγελματίας</h5>
+                                    <ul class="list-unstyled">
+                                    <li>An item</li>
+                                    <li>A second item</li>
+                                    <li>A third item</li>
+                                    <li>A fourth item</li>
+                                    <li>A fifth item</li>
+                                    </ul>
+                                    <div class="pb-3 pt-1">
+                                    <a href="#" class="btn btn-primary" onmouseover = "SA2card3H()" onmouseout = "SA2card3U()">Εγγραφείτε</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact">
+            <div class="bg-light py-5 get-in-touch">
+                
+                <div class="container p-3">
+                    <div class="row">                 
+                        <div class="pt-5 px-4 pb-3" > <h1 style="color: #6240dd;">Ελάτε σε επαφή</h1></div>     
+                        <div class="col-lg-4 px-5 mb-5 d-flex align-items-center justify-content-center">
+                            <div class="card t" style="width: 18rem;">
+                                <img class="card-img-top" src="/imgs/bman1.jpg"  >
+                                <div class="card-body text-center">
+                                    <h5 class="fw-bold">John Doe</h5>
+                                    <h6>Lead Data Director</h6>
+                                    <hr>
+                                    <p>johndoe@email.com</p>
+                                    <a href="#"><i class="bi bi-twitter px-2"></i></a>
+                                    <a href="#"><i class="bi bi-instagram px-2"></i></a>
+                                    <a href="#"><i class="bi bi-linkedin px-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 px-5 mb-5 d d-flex align-items-center justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="/imgs/bman2.jpg"  >
+                                <div class="card-body text-center">
+                                    <h5 class="fw-bold">Will Barrow</h5>
+                                    <h6>Internal Auditor</h6>
+                                    <hr>
+                                    <p>wbarrow@email.com</p>
+                                    <a href="#"><i class="bi bi-twitter px-2"></i></a>
+                                    <a href="#"><i class="bi bi-instagram px-2"></i></a>
+                                    <a href="#"><i class="bi bi-linkedin px-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 px-5 mb-5 d-flex align-items-center justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="/imgs/bman3.jpg"  >
+                                <div class="card-body text-center">
+                                    <h5 class="fw-bold">Penny Pot</h5>
+                                    <h6>Equity Trader/Partner</h6>
+                                    <hr>
+                                    <p>pennypot@email.com</p>
+                                    <a href="#"><i class="bi bi-twitter px-2"></i></a>
+                                    <a href="#"><i class="bi bi-instagram px-2"></i></a>
+                                    <a href="#"><i class="bi bi-linkedin px-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                
+                </div>
+            </div>
+            <div class="container-flex py-5 banner2 d-flex text-center justify-content-center align-items-center">
+                <div class="p-5">
+                    <h3 class="px-5 py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nisi consequatur omnis.</h3>
+                    <div class="col text-center">
+                            <a class="btn btn-primary" href="contact.html" role="button">
+                                Επικοινωνία <i class="bi bi-box-arrow-right"></i> 
+                            </a>                
+                    </div>
+                </div>
+            </div>
+        </section>  
+
+        <footer class="bg-white" id="footer-container">
+            <div class="container pt-4 pb-3">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Σύνδεσμοι</h3>
+                        <ul class="list-unstyled ">
+                            <li><a href="/gr/index.html" class="transitionLink">Αρχική</a></li>
+                            <li><a href="/gr/contact.html" class="transitionLink">Επικοινωνία</a></li>
+                            <li><a href="#" >Καριέρες</a></li>
+                            <li><a href="#" >Συχνές Ερωτήσεις</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Υπηρεσίες</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Υπηρεσίες A</a></li>
+                            <li><a href="#">Υπηρεσίες B</a></li>
+                            <li><a href="#">Υπηρεσίες C</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text-center">
+                        <h3>Όνομα Εταιρείας</h3>
+                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                    </div>
+                    <div class="col item text-center mt-3">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <p class="copyright text-center pt-4 mb-1">Όνομα Εταιρείας © 2023</p>
+            </div>
+        </footer>
+    
+     <script src="/script.js" defer></script>
+     <script src="/loader.js" defer></script>
+
+</body>
+</html>

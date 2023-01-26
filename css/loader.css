@@ -1,0 +1,49 @@
+ .loader-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all .3s ease-out;
+    animation: pulsate-fwd 1s   infinite both;
+}
+
+.loader-wrapper i{
+    font-size: 72px;
+    background-image: linear-gradient(25deg, #5734d7, #ff3af8);
+    background-clip: text;
+    color: transparent;
+}
+
+  @keyframes pulsate-fwd {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+
+.spinner-border{
+    height: 72px;
+    width: 72px;
+}
+ 
+
+.fade-out{
+    opacity: 0;
+    visibility: hidden;
+  }

@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+ 
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: gray rgb(165, 165, 165);
+    scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar { width: 12px; }
+   
+*::-webkit-scrollbar-track { background: rgb(165, 165, 165); }
+   
+*::-webkit-scrollbar-thumb {
+   background-color: gray;
+   border-radius: 20px;
+   border: 3px solid rgb(165, 165, 165);
+}
+ 
+ 
+
+ 
+
+body {
+    position: relative;
+    background: linear-gradient(180deg, #a5a5a5 0%, #f3ab3f 100%);  
+    overflow: hidden;
+    pointer-events: none;
+    overflow-anchor:auto;
+}
+
+ 
+ 
+/*--------Contact Page---------*/
+ 
+.contact{
+    min-height: 60vh;
+    background-image: url("/imgs/blob-scene-haikei.svg");
+    background-position: center;
+}
+
+.form-floating{
+    position: relative;
+}
+
+.form-floating i{
+    position: absolute;
+    top: calc(20%);
+    left: 1.2rem
+}
+
+.form-floating label, .form-floating .form-control{
+    left: 1.5rem;
+    padding-left: 2.3rem;
+}
+
+/*Input form colors*/
+ .form-control:focus,.form-select:focus {
+    border-color: rgba(243, 243, 243, 0.441);
+}
+ 
+.form-control,.form-control:focus {
+    background-image: none;
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.696);
+    border-radius: 0;
+    width: 93%;
+    margin: 0 0 0 20px;
+}
+
+#floatingText{
+    margin-top: 24px;
+    border: 2px solid rgba(0, 0, 0, 0.696);
+    border-radius: 8px;
+}
+ 
+textarea {
+     overflow:auto;
+     resize:none;
+}
+ 
+.contact-links i{
+    font-size: 60px;
+    margin: 8px 12px;
+    color: rgb(34, 34, 34);
+    transition: 0.4s;
+}  
+
+ .contact-links i:hover{
+    transition: 0.4s;
+    color: #5734d7;
+}
+
+.list-group,.list-group-item{
+    background-image: none;
+    border: none;
+}
+
+.contact .btn{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-size: 20px;
+    padding: 8px 16px;
+    transition: 0.4s;
+}
+
+.contact .btn:hover{
+    background-color: #5734d7;
+    transition: 0.4s;
+}
+
+ .banner3{
+    background-image: url("/imgs/banner3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+ 
+ .banner3 p{
+   text-shadow: 2px 2px 4px black;
+}
+
+.contact hr{
+    opacity: 0;
+    transition: 0.4s;
+}
+
+/*------------------------*/  
+
+
+
+
+.appBody{
+    min-height: 100vh;
+    padding: 92px 0;
+    position: relative;
+    background-color: #3472d7;
+}
+
+.card{
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.295);
+    border: none;
+}
+ 
+.banner{
+    background-image: url("/imgs/banner.jpg");
+    height: 60vh;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ .about-main{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 8px 16px;
+}
+
+ .about-main h1{
+    font-size: 48px;
+    font-weight: bold;
+    border-left: 6px solid #6240dd;
+    padding-left: 16px;
+    background-image: linear-gradient(25deg, #5734d7, #ff3af8);
+    background-clip: text;
+    color: transparent;
+}
+
+ .about-main button{
+    outline: none;
+    border: none;
+    padding: 12px 20px;
+    font-size: 20px;
+    border-radius: 12px;
+    background-color: #6240dd;
+    color: white;
+    transition: 0.6s;
+    letter-spacing: 2px;
+    margin-top: 16px;
+     
+}
+
+ .about-main button:hover{
+    transition: 0.6s;
+    letter-spacing: 7px;
+    background-color: #322071;
+}
+
+.about-main img{
+    width: 100%;
+}
+
+ .more-about{ min-height: 40vh; }
+    
+ .more-about i{
+    font-size: 60px;
+    color: #6240dd;
+}
+
+ .more-about a{
+    font-size: 24px;
+    color: #6240dd;
+    text-decoration: none;
+    position: relative;
+}
+
+ .more-about h2{
+    width: 200px;
+    margin: 0 auto;
+ }
+
+a:before,  a:after{
+    content: '';
+    position: absolute;
+    transition: transform .5s ease;
+}
+
+.link-hover-effect {
+    padding: 6px 12px;
+}
+
+.link-hover-effect:before, .link-hover-effect:after {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: #6240dd;
+}
+
+.link-hover-effect:before {
+    border-width: 2px 0 2px 0;
+    transform: scaleX(0);
+}
+
+.link-hover-effect:after {
+    border-width: 0 2px 0 2px;
+    transform: scaleY(0);
+}
+
+.link-hover-effect:hover:before, .link-hover-effect:hover:after {
+    transform: scale(1, 1);
+}
+
+.sectors{ min-height: 86vh; }
+   
+.sector-cards{
+    color: #5734d7;
+    max-width: 140px;
+    max-height: 140px;
+    margin: 16px auto;
+    font-size: 36px;
+}
+
+.sector-img img{ min-height: 100%; }   
+
+.sector-img img{
+    object-fit: cover;
+     height: 100%;
+    width: 100%;
+    border-radius: 16px;
+}
+
+h6{ color:#322071; }
+
+.deposits-withdrawls{
+    min-height: 80vh;
+}
+
+ .deposits-withdrawls .card{
+    box-shadow: none;
+    border: 2px solid #5734d7;
+    border-radius: 16px;
+    
+}
+
+ .i-cover{
+    position: relative;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    margin: 0  auto;
+}
+
+.payment-currencies i{ 
+    font-size: 48px;
+    color: #5734d7;
+}
+ 
+.payment-currencies h2{ 
+    border-bottom: 1px solid rgb(78, 78, 78);
+    max-width: 70%;
+    margin: 2px auto;
+    padding-bottom: 12px;
+} 
+ 
+ .payment-currencies h6{ color: #5734d7; }
+
+ .deposits-withdrawls h1{
+    background-image: linear-gradient(60deg, #5734d7, #ff3af8);
+    background-clip: text;
+    color: transparent;
+    font-size: 72px;
+    margin-bottom: 8px;
+}
+
+
+
+.deposits-withdrawls .card-title{
+    border-bottom: 2px solid black;
+    width: 160px;
+}
+
+.about-trading a:hover,.deposits-withdrawls a:hover{
+    color: #3700ff !important;
+}
+  
+.pricing-banner {
+    background-image: url("/imgs/banner2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.pricing-header{
+    padding: 40px 0;
+    background: #d7d7d7;
+    border-radius:  4px  4px 0% 50%;
+    transition: all .5s ease 0s
+}
+
+.pricing .btn{
+   outline: none;
+   border: none;
+   padding: 8px 24px;
+   font-size: 18px;
+   transition: 0.4s;
+   background-color: #d7d7d7 ;   
+}
+
+.pricing .card{ background-color: #fdfdfd ; }
+
+.pricing a{color: #424242 }
+
+.pricing-header .card-body{box-shadow: none !important;}
+
+.pricing ul li{margin-top: 4px;}
+
+.pricing-header h4,.pricing-header h1 {
+    color: #424242; transition: 0.4s;
+}    
+
+.card1 .btn:hover{
+    background-color: #ff3af8 ;
+    transition: 0.4s;    
+    color: white; 
+} 
+
+ .pricing .card.active a{
+    color: white !important;
+}
+
+ .card1.active .pricing-header{
+  background-color: #ff3af8 ;
+  transition: all 0.4s ;
+  color: white;
+}
+
+ .card.active h4, .card.active h1{
+    color: white;
+    transition: all 0.4s ;
+}
+
+ .card2.active .pricing-header{
+    background-color: #5734d7 ;
+    transition: all 0.4s ;
+    color: white;
+  }
+  
+   .card2 .btn:hover{
+    background-color: #5734d7 ;
+    transition: 0.4s;    
+    color: white;
+} 
+
+ .card3.active .pricing-header{
+    background-color: #3472d7 ;
+    transition: all 0.4s ;
+    color: white;
+  }
+  
+.card3 .btn:hover{
+    background-color: #3472d7 ;
+    transition: 0.4s;    
+    color: white;
+} 
+
+ .get-in-touch .card{
+     padding: 0;
+     box-shadow: none;
+     border-radius: 0;
+}
+
+ .get-in-touch .card img{
+    min-width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 0;
+    height: 172px;
+}
+
+ .get-in-touch .card i, .get-in-touch .card h5{
+    color: #5734d7 ;
+}
+ 
+.banner2 {
+    background-image: linear-gradient(to right, #5734d7, #8836e2, #b237eb, #d938f2, #ff3af8);
+    min-height: 20vh;
+    color: white;
+}
+
+ .banner2 .btn{
+    padding: 8px 16px;
+    margin-top: 4px;
+    font-size: 20px; 
+    color: #5734d7;
+    background-color: #ffffff;
+    outline: none;
+    border: none;
+}
+ 
+ .banner2 .btn{
+    background-color: #ffffff;
+    outline: none;
+    border:  none;
+    padding: 8px 20px;
+    font-size: 26px;
+    position: relative;
+    transition: 0.6s ease-in-out;
+}
+
+  .banner2 .btn:hover{
+    padding-right: 60px;
+    transition: 0.5s ease-in-out;
+}
+
+  .banner2 .btn i{
+    position: absolute;
+    margin-left: 16px;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+   .banner2 .btn:hover i{
+    opacity:1;
+    transform: translateX(0);
+    transition: 0.5s ease-in-out;
+}
+
+  .banner2 .btn:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+  .banner2 .btn:active::before{
+    transform: scaleX(1);
+}
+
+@media (max-width: 1200px){
+    .about-main button{
+       position: relative;
+       display: flex;
+       margin: 28px auto 0 auto;
+       padding: 12px 28px;
+       font-size: 24px;   
+  }
+}
+
+@media (max-width:768px){
+    .about-container{ 
+      padding: 0 !important;
+   }
+
+    .about-main{
+     min-width: 100%;
+     padding: 16px !important;
+  }
+}
+
+@media (max-width:576px){
+    .appBody{
+        padding: 28px;
+   }
+
+   .form-control,.form-control:focus {
+        width: 93%;
+        margin: 0 auto;
+    }
+    .contact hr{
+        opacity: 0.7;
+        transition: 0.4s;
+    }
+}
+
+@media (max-width:478px){
+    .sector-cards{
+       max-width: 120px;
+       max-height: 120px;
+       margin: 14px auto;
+       font-size: 30px;
+   }
+
+   .deposits-withdrawls h1{
+        font-size: 60px; 
+    }
+}
+
+@media (max-width:418px){
+    .sector-cards{
+       max-width: 120px;
+       max-height: 120px;
+       margin: 14px auto;
+       font-size: 30px;
+   }
+
+   .contact-links i{
+        font-size: 48px;
+    } 
+}
+
+@media (max-width:372px){
+    .deposits-withdrawls h1{
+        font-size: 48px; 
+    }
+}
+
+   
+
+
+/*--------------------------------------*/
