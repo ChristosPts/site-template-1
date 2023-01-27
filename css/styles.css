@@ -310,8 +310,6 @@ h6{ color:#322071; }
     margin-bottom: 8px;
 }
 
-
-
 .deposits-withdrawls .card-title{
     border-bottom: 2px solid black;
     width: 160px;
@@ -415,17 +413,15 @@ h6{ color:#322071; }
     height: 172px;
 }
 
- .get-in-touch .card i, .get-in-touch .card h5{
-    color: #5734d7 ;
-}
- 
+.get-in-touch .card i, .get-in-touch .card h5{ color: #5734d7 ; }
+    
 .banner2 {
     background-image: linear-gradient(to right, #5734d7, #8836e2, #b237eb, #d938f2, #ff3af8);
     min-height: 20vh;
     color: white;
 }
 
- .banner2 .btn{
+.banner2 .btn{
     padding: 8px 16px;
     margin-top: 4px;
     font-size: 20px; 
@@ -435,7 +431,7 @@ h6{ color:#322071; }
     border: none;
 }
  
- .banner2 .btn{
+.banner2 .btn{
     background-color: #ffffff;
     outline: none;
     border:  none;
@@ -445,12 +441,12 @@ h6{ color:#322071; }
     transition: 0.6s ease-in-out;
 }
 
-  .banner2 .btn:hover{
+.banner2 .btn:hover{
     padding-right: 60px;
     transition: 0.5s ease-in-out;
 }
 
-  .banner2 .btn i{
+.banner2 .btn i{
     position: absolute;
     margin-left: 16px;
     transform: translateX(-50%);
@@ -458,13 +454,13 @@ h6{ color:#322071; }
     transition: 0.3s ease-in-out;
 }
 
-   .banner2 .btn:hover i{
+.banner2 .btn:hover i{
     opacity:1;
     transform: translateX(0);
     transition: 0.5s ease-in-out;
 }
 
-  .banner2 .btn:before{
+.banner2 .btn:before{
     content: '';
     position: absolute;
     left: 0;
@@ -474,7 +470,7 @@ h6{ color:#322071; }
     transition: 0.5s ease-in-out;
 }
 
-  .banner2 .btn:active::before{
+.banner2 .btn:active::before{   
     transform: scaleX(1);
 }
 
@@ -497,6 +493,11 @@ h6{ color:#322071; }
      min-width: 100%;
      padding: 16px !important;
   }
+
+  .banner h1,.banner p{
+    text-align: center;
+  }
+
 }
 
 @media (max-width:576px){
@@ -546,7 +547,46 @@ h6{ color:#322071; }
     }
 }
 
-   
 
+.loader-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(241, 241, 241);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all .3s ease-out;
+    animation: pulsate-fwd 1s   infinite both;
+}
 
-/*--------------------------------------*/
+.loader-wrapper i{
+    font-size: 72px;
+    background-image: linear-gradient(25deg, #5734d7, #ff3af8);
+    background-clip: text;
+    color: transparent;
+}
+
+@keyframes pulsate-fwd {
+    0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+ 
+.fade-out{
+    opacity: 0;
+    visibility: hidden;
+}
