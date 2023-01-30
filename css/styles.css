@@ -415,24 +415,16 @@ h6{ color:#322071; }
 
 .get-in-touch .card i, .get-in-touch .card h5{ color: #5734d7 ; }
     
+    
 .banner2 {
     background-image: linear-gradient(to right, #5734d7, #8836e2, #b237eb, #d938f2, #ff3af8);
     min-height: 20vh;
     color: white;
 }
-
-.banner2 .btn{
-    padding: 8px 16px;
-    margin-top: 4px;
-    font-size: 20px; 
-    color: #5734d7;
-    background-color: #ffffff;
-    outline: none;
-    border: none;
-}
  
 .banner2 .btn{
     background-color: #ffffff;
+    color: #5734d7;
     outline: none;
     border:  none;
     padding: 8px 20px;
@@ -443,6 +435,7 @@ h6{ color:#322071; }
 
 .banner2 .btn:hover{
     padding-right: 60px;
+    background-color: #ffffff;
     transition: 0.5s ease-in-out;
 }
 
