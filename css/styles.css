@@ -170,6 +170,8 @@ textarea {
     background-image: linear-gradient(25deg, #5734d7, #ff3af8);
     background-clip: text;
     color: transparent;
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
  .about-main button{
@@ -308,6 +310,8 @@ h6{ color:#322071; }
     color: transparent;
     font-size: 72px;
     margin-bottom: 8px;
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .deposits-withdrawls .card-title{
@@ -562,6 +566,8 @@ h6{ color:#322071; }
     background-image: linear-gradient(25deg, #5734d7, #ff3af8);
     background-clip: text;
     color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @keyframes pulsate-fwd {
